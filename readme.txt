@@ -24,3 +24,6 @@ build/Aorb_demo
 
 # References
 [1] J.M. Morel and G.Yu, ASIFT: A New Framework for Fully Affine Invariant Image Comparison, SIAM Journal on Imaging Sciences, vol. 2, issue 2, 2009.
+
+# 文件Erie可以参加见链接：
+https://github.com/kukuruza/Erie
