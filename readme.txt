@@ -19,7 +19,7 @@ cd ..
 
 # Usage
 #  example
-build/Aorb_demo
+build/Asift_demo
 build/Aorb_demo
 
 # References
