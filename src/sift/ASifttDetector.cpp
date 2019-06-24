@@ -30,11 +30,13 @@ void ASifttDetector::detectAndCompute(const Mat& img, std::vector< KeyPoint >& k
             waitKey(0);
 #endif
 
-            SiftFeatureDetector detector;
-            detector.detect(timg, kps, mask);
+            // cv::xfeatures2d::SiftFeatureDetector detector;
+            Ptr<FeatureDetector> detector = xfeatures2d::SIFT::create();
+            detector->detectAndCompute(timg, Mat(), kps, desc);
+            // detector->detect(timg, kps, mask);
 
-            SiftDescriptorExtractor extractor;
-            extractor.compute(timg, kps, desc);
+            // cv::xfeatures2d::SiftDescriptorExtractor extractor;
+            // extractor.compute(timg, kps, desc);
 
             for(unsigned int i = 0; i < kps.size(); i++)
             {

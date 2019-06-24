@@ -56,17 +56,20 @@ void findInliers(vector<KeyPoint> &qKeypoints, vector<KeyPoint> &objKeypoints, v
     vector<Point2f> queryInliers;
     vector<Point2f> sceneInliers;
     Mat H = findFundamentalMat(queryCoord, objectCoord, mask, CV_FM_RANSAC);
+    vector<DMatch> matches_good;
     //Mat H = findHomography( queryCoord, objectCoord, CV_RANSAC, 10, mask);
     int inliers_cnt = 0, outliers_cnt = 0;
     for (int j = 0; j < mask.rows; j++){
         if (mask.at<uchar>(j) == 1){
             queryInliers.push_back(queryCoord[j]);
             sceneInliers.push_back(objectCoord[j]);
+            matches_good.push_back(matches[j]);
             inliers_cnt++;
         }else {
             outliers_cnt++;
         }
     }
+    matches.swap(matches_good);
     //显示剔除误配点对后的匹配点对
     drawMatch(imgfn, objFileName, queryInliers, sceneInliers);
 }

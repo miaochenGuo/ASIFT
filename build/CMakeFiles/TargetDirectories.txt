@@ -1,0 +1,4 @@
+/home/xiongfan/github/Aorb_sift/build/CMakeFiles/rebuild_cache.dir
+/home/xiongfan/github/Aorb_sift/build/CMakeFiles/edit_cache.dir
+/home/xiongfan/github/Aorb_sift/build/CMakeFiles/Asift_demo.dir
+/home/xiongfan/github/Aorb_sift/build/CMakeFiles/demo.dir

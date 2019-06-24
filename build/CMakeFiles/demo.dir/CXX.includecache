@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xiongfan/github/Aorb_sift/src/utils.cpp
+utils.h
+/home/xiongfan/github/Aorb_sift/src/utils.h
+
+/home/xiongfan/github/Aorb_sift/src/utils.h
+stdio.h
+-
+vector
+-
+iostream
+-
+opencv/cv.h
+/home/xiongfan/github/Aorb_sift/src/opencv/cv.h
+opencv/highgui.h
+/home/xiongfan/github/Aorb_sift/src/opencv/highgui.h
+opencv2/core/core.hpp
+/home/xiongfan/github/Aorb_sift/src/opencv2/core/core.hpp
+opencv2/highgui/highgui.hpp
+/home/xiongfan/github/Aorb_sift/src/opencv2/highgui/highgui.hpp
+opencv2/features2d/features2d.hpp
+/home/xiongfan/github/Aorb_sift/src/opencv2/features2d/features2d.hpp
+opencv2/calib3d/calib3d.hpp
+/home/xiongfan/github/Aorb_sift/src/opencv2/calib3d/calib3d.hpp
+opencv2/imgproc/imgproc.hpp
+/home/xiongfan/github/Aorb_sift/src/opencv2/imgproc/imgproc.hpp
+opencv2/xfeatures2d/nonfree.hpp
+/home/xiongfan/github/Aorb_sift/src/opencv2/xfeatures2d/nonfree.hpp
+
